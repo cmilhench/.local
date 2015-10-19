@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-#mkdir -p ~/.vim/bundle
-
 # Copy
 ! [ -d ~/.dotfile_backup ] && mkdir ~/.dotfile_backup
 # For each of the files in the current directory that start with a '.'
