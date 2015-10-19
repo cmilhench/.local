@@ -15,7 +15,6 @@ for i in .*; do
       fi
     fi
     # Link it
-    #echo "Linked: $i" > /dev/stderr
     if ! (ln -sfv $(pwd)/$i ~/$i); then
      echo "Failed on $i" > /dev/stderr
      exit 1

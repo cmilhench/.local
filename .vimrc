@@ -12,7 +12,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'          " A tree explorer plugin for vim
 Plugin 'airblade/vim-gitgutter'
-Plugin 'Xuyuanp/nerdtree-git-plugin'  " A plugin of NERDTree showing git status flags
 Plugin 'msanders/snipmate.vim'
 
 " All of your Plugins must be added before the following line
