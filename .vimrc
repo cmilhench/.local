@@ -43,6 +43,6 @@ set clipboard=unnamed
 set hlsearch
 set incsearch
 set suffixesadd+=.js
-colorscheme github
+colorscheme molokai
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
