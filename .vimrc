@@ -11,8 +11,11 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'          " A tree explorer plugin for vim
-Plugin 'airblade/vim-gitgutter'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'msanders/snipmate.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'nsf/gocode', {'rtp':'vim/'}
+Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -38,11 +41,16 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set listchars=eol:¬,tab:>-
-"set list
-set clipboard=unnamed
 set hlsearch
 set incsearch
-set suffixesadd+=.js
+set clipboard=unnamed
 colorscheme molokai
+set background=dark
+
+" Keyboard mappings
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+
+" File extension
+set suffixesadd+=.js
+

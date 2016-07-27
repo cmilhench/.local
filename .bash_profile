@@ -11,6 +11,7 @@ alias ll="ls -oG"
 alias clean="sudo find . -name '.DS_*' | xargs rm"
 alias h="history"
 alias ip="ipconfig getifaddr en0 ; curl ipecho.net/plain ; echo"
+alias ports='netstat -tulanp tcp'
 alias goenv='export GOPATH=$PWD && export PATH=$GOPATH/bin:$PATH'
 
 # Bash Editor
