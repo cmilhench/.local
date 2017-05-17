@@ -1,4 +1,8 @@
-# Git Completion
+stty -ixon
+export HISTCONTROL=ignoreboth:erasedups
+
+ #Git Completion
+ 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
@@ -8,7 +12,7 @@ complete -C aws_completer aws
 
 # Shell
 alias ll="ls -oG"
-alias clean="sudo find . -name '.DS_*' | xargs rm"
+alias clean="sudo find . -name '.DS_*' -o -name '.*.swp' | xargs rm"
 alias h="history"
 alias ip="ipconfig getifaddr en0 ; curl ipecho.net/plain ; echo"
 alias ports='netstat -tulanp tcp'
@@ -26,3 +30,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 nvm use 4 1&>/dev/null
 
+# Set the gopath
+export export GOPATH=$HOME/Code/cm/golang && PATH=$GOPATH/bin:$PATH
