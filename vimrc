@@ -9,19 +9,8 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'itchyny/vim-cursorword'
-Plugin 'itchyny/lightline.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'airblade/vim-gitgutter'
-
-
-Plugin 'fatih/vim-nginx'
 Plugin 'fatih/vim-go'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'majutsushi/tagbar'
-
-
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -43,17 +32,19 @@ set clipboard^=unnamed
 set clipboard^=unnamedplus
 
 syntax on
+set hidden
 set laststatus=2
 set number
+set ruler
 set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
-set listchars=eol:¬,tab:>-
+"set listchars=eol:¬,tab:>-
 set hlsearch
 set incsearch
 set background=dark
-colorscheme hybrid
+colorscheme monochrome
 
 
 
@@ -67,25 +58,19 @@ colorscheme hybrid
 
 
 
-
+nmap <silent> <leader>s :set spell!<CR>
 set spelllang=en_gb
-
-
-
-" Make the higlight line red in Visual mode
-hi Visual ctermbg=1
 
 " Keyboard mappings
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
-nnoremap <silent> <F2> :NERDTreeToggle<CR>
-nnoremap <silent> <F6> :TagbarToggle<CR>
-nnoremap <silent> gb :GoBuild<CR>
-nnoremap <silent> gt :GoTest<CR>
-nnoremap <silent> gl :GoMetaLinter<CR>
-nnoremap <silent> gr :GoRun<CR>
-
-
+nnoremap <silent> <leader><space> :NERDTreeToggle<CR>
+nnoremap <silent> <leader>gb :GoBuild<CR>
+nnoremap <silent> <leader>gt :GoTest<CR>
+nnoremap <silent> <leader>gl :GoMetaLinter<CR>
+nnoremap <silent> <leader>gr :GoRun<CR>
+nnoremap <silent> <leader>ds :GoToggleBreakpoint<CR>
+nnoremap <silent> <leader>dd :GoDebug<CR>
 
 " Stop Ex mode forever!
 nnoremap Q <nop>
@@ -103,31 +88,7 @@ let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 2
 
-let g:tagbar_type_go = {
-    \ 'ctagstype' : 'go',
-    \ 'kinds'     : [
-        \ 'p:package',
-        \ 'i:imports:1',
-        \ 'c:constants',
-        \ 'v:variables',
-        \ 't:types',
-        \ 'n:interfaces',
-        \ 'w:fields',
-        \ 'e:embedded',
-        \ 'm:methods',
-        \ 'r:constructor',
-        \ 'f:functions'
-    \ ],
-    \ 'sro' : '.',
-    \ 'kind2scope' : {
-        \ 't' : 'ctype',
-        \ 'n' : 'ntype'
-    \ },
-    \ 'scope2kind' : {
-        \ 'ctype' : 't',
-        \ 'ntype' : 'n'
-    \ },
-    \ 'ctagsbin'  : 'gotags',
-    \ 'ctagsargs' : '-sort -silent'
-\ }
+" use ascii charecters in nerd tree
+let g:NERDTreeDirArrowExpandable = '>'
+let g:NERDTreeDirArrowCollapsible = 'v'
 
