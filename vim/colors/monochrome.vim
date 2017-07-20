@@ -25,8 +25,8 @@ hi Visual          guifg=#000000    guibg=#FFFFFF    ctermfg=black    ctermbg=24
 hi VisualNOS       guifg=#000000    guibg=#FFFFFF    ctermfg=black    ctermbg=248    gui=ITALIC       cterm=NONE
 
 "" 248 fg w/248 bg
-hi CursorColumn    guifg=#A0A0A0    guibg=#FFFFFF    ctermfg=248     ctermbg=248    gui=NONE         cterm=NONE
-hi CursorLine      guifg=#A0A0A0    guibg=#FFFFFF    ctermfg=248     ctermbg=248    gui=NONE         cterm=NONE
+hi CursorColumn    guifg=#A0A0A0    guibg=#FFFFFF    ctermfg=248     ctermbg=248     gui=NONE         cterm=NONE
+hi CursorLine      guifg=#A0A0A0    guibg=#FFFFFF    ctermfg=248     ctermbg=60      gui=NONE         cterm=NONE
 
 "" 248 fg w/black bg
 hi Comment         guifg=#A0A0A0    guibg=#000000    ctermfg=240     ctermbg=black    gui=ITALIC       cterm=NONE
@@ -36,7 +36,7 @@ hi DiffText        guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=bla
 hi Directory       guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=black    gui=NONE         cterm=NONE
 hi Error           guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=black    gui=NONE         cterm=NONE
 hi Folded          guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=black    gui=NONE         cterm=NONE
-hi Function        guifg=#A0A0A0    guibg=#000000    ctermfg=white   ctermbg=black    gui=NONE         cterm=NONE
+hi Function        guifg=#A0A0A0    guibg=#000000    ctermfg=255     ctermbg=black    gui=NONE         cterm=NONE
 hi Identifier      guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=black    gui=NONE         cterm=NONE
 hi Ignore          guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=black    gui=NONE         cterm=NONE
 hi Label           guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=black    gui=NONE         cterm=NONE
@@ -54,12 +54,12 @@ hi Special         guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=bla
 hi SpecialKey      guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=black    gui=ITALIC       cterm=NONE
 hi SpellBad        guifg=#A0A0A0    guibg=#000000    ctermfg=166     ctermbg=black    gui=ITALIC       cterm=NONE
 hi Statement       guifg=#A0A0A0    guibg=#000000    ctermfg=60      ctermbg=black    gui=NONE         cterm=NONE
-hi StatusLine      guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=black    gui=NONE         cterm=NONE
-hi StatusLineNC    guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=black    gui=ITALIC       cterm=NONE
+hi StatusLine      guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=235      gui=NONE         cterm=NONE
+hi StatusLineNC    guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=235      gui=ITALIC       cterm=NONE
 hi StorageClass    guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=black    gui=NONE         cterm=NONE
 hi Structure       guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=black    gui=NONE         cterm=NONE
-hi TabLine         guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=black    gui=NONE         cterm=NONE
-hi TabLineFill     guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=black    gui=NONE         cterm=NONE
+hi TabLine         guifg=#A0A0A0    guibg=#000000    ctermfg=255     ctermbg=235      gui=NONE         cterm=NONE
+hi TabLineFill     guifg=#A0A0A0    guibg=#000000    ctermfg=255     ctermbg=235      gui=NONE         cterm=NONE
 hi TabLineSel      guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=black    gui=NONE         cterm=NONE
 hi Title           guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=black    gui=NONE         cterm=NONE
 hi Todo            guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=black    gui=NONE         cterm=NONE
@@ -70,9 +70,13 @@ hi Underlined      guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=bla
 hi VertSplit       guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=black    gui=NONE         cterm=NONE
 hi WarningMsg      guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=black    gui=NONE         cterm=NONE
 hi WildMenu        guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=black    gui=NONE         cterm=NONE
-hi cucumberTags    guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=black    gui=NONE         cterm=NONE
-hi htmlTagN        guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=black    gui=NONE         cterm=NONE
-hi rubySymbol      guifg=#A0A0A0    guibg=#000000    ctermfg=248     ctermbg=black    gui=NONE         cterm=NONE
+
+hi htmlH1          guifg=#A0A0A0    guibg=#000000    ctermfg=60      ctermbg=black    gui=NONE         cterm=NONE
+hi htmlTag         guifg=#A0A0A0    guibg=#000000    ctermfg=60      ctermbg=black    gui=NONE         cterm=NONE
+hi htmlEndTag      guifg=#A0A0A0    guibg=#000000    ctermfg=60      ctermbg=black    gui=NONE         cterm=NONE
+hi htmlTagLink     guifg=#A0A0A0    guibg=#000000    ctermfg=60      ctermbg=black    gui=NONE         cterm=NONE
+hi htmlBold        guifg=#A0A0A0    guibg=#000000    ctermfg=0       ctermbg=248      gui=NONE         cterm=NONE
+hi htmlItalic      guifg=#A0A0A0    guibg=#000000    ctermfg=0       ctermbg=248      gui=NONE         cterm=NONE
 
 "" 248 fg w/black bg
 hi Constant        guifg=#FFFFFF    guibg=#000000    ctermfg=248    ctermbg=black    gui=NONE         cterm=NONE

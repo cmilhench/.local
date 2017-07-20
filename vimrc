@@ -46,6 +46,9 @@ set incsearch
 set background=dark
 colorscheme monochrome
 
+" Find all TODO statements
+command! -nargs=* TODO vimgrep /TODO/g *.* **/*.*
+
 
 
 
