@@ -1,0 +1,1 @@
+../bashrc.d/100.gopath.sh
