@@ -20,5 +20,5 @@ alias rm='rm -i'
 # always print in human readable form
 alias df="df -h"
 
-
+#alias node="docker run -it --rm -v $(pwd):/app -w /app node"
 
