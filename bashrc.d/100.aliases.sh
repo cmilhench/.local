@@ -21,4 +21,7 @@ alias rm='rm -i'
 alias df="df -h"
 
 #alias node="docker run -it --rm -v $(pwd):/app -w /app node"
+alias d-redis-cli='docker run -it --rm redis redis-cli'
+alias d-aws='docker run --rm -ti -v ~/.aws:/root/.aws -v $(pwd):/aws amazon/aws-cli'
+alias d-doctl='docker run --rm --interactive --tty -v ~/Library/Application\ Support/doctl:/root/doctl -v ~/.ssh/id_rsa:/root/.ssh/id_rsa digitalocean/doctl -c /root/doctl/config.yaml'
 
